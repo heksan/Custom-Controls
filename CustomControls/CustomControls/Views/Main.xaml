@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomControls.Views.Main">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="List of StackLayouts" Command="{Binding MoveToListOfStackLayouts}"></Button>
+            <Button Text="Tiles" Command="{Binding MoveToTiles}"></Button>
+            <Button Text="Swipe to Delete" Command="{Binding MoveToSwipeToDelete}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

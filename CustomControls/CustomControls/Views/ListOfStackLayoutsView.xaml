@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomControls.Views.ListOfStackLayoutsView"
+             xmlns:CustomControls="clr-namespace:CustomControlsLibrary.ListOfStackLayouts;assembly=CustomControlsLibrary">
+    <ContentView.Content>
+        <StackLayout x:Name="MainContainer" VerticalOptions="FillAndExpand">
+            <ScrollView VerticalOptions="FillAndExpand">
+                <CustomControls:ListOfStackLayouts HorizontalOptions="FillAndExpand"
+                           ItemsSource="{Binding Items,Mode=TwoWay}">
+                </CustomControls:ListOfStackLayouts>
+            </ScrollView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentPage>
